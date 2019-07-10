@@ -43,9 +43,9 @@
 		D508CAC422CFA734004C6E96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D508CACD22CFE734004C6E96 /* PhotoNote+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PhotoNote+CoreDataClass.swift"; sourceTree = "<group>"; };
 		D508CACE22CFE734004C6E96 /* PhotoNote+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PhotoNote+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		D508CAD122CFE8B7004C6E96 /* PhotoNotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoNotesViewController.swift; sourceTree = "<group>"; };
-		D508CAD322CFE8CB004C6E96 /* PhotoNoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoNoteViewController.swift; sourceTree = "<group>"; };
-		D508CAD522CFE8E5004C6E96 /* PhotoNotesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoNotesTableViewCell.swift; sourceTree = "<group>"; };
+		D508CAD122CFE8B7004C6E96 /* PhotoNotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PhotoNotesViewController.swift; path = PhotoNotes/View/PhotoNotesViewController.swift; sourceTree = SOURCE_ROOT; };
+		D508CAD322CFE8CB004C6E96 /* PhotoNoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PhotoNoteViewController.swift; path = PhotoNotes/View/PhotoNoteViewController.swift; sourceTree = SOURCE_ROOT; };
+		D508CAD522CFE8E5004C6E96 /* PhotoNotesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PhotoNotesTableViewCell.swift; path = PhotoNotes/View/PhotoNotesTableViewCell.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,17 +87,13 @@
 		D508CAA922CFA733004C6E96 /* PhotoNotes */ = {
 			isa = PBXGroup;
 			children = (
-				D508CACD22CFE734004C6E96 /* PhotoNote+CoreDataClass.swift */,
-				D508CACE22CFE734004C6E96 /* PhotoNote+CoreDataProperties.swift */,
+				D5E2091922D5634000627196 /* View */,
+				D5E2091822D5632200627196 /* Model */,
 				D508CAAA22CFA733004C6E96 /* AppDelegate.swift */,
 				D508CAAE22CFA733004C6E96 /* Main.storyboard */,
 				D508CAB422CFA734004C6E96 /* Assets.xcassets */,
 				D508CAB622CFA734004C6E96 /* LaunchScreen.storyboard */,
 				D508CAB922CFA734004C6E96 /* Info.plist */,
-				D508CAB122CFA733004C6E96 /* PhotoNotes.xcdatamodeld */,
-				D508CAD122CFE8B7004C6E96 /* PhotoNotesViewController.swift */,
-				D508CAD322CFE8CB004C6E96 /* PhotoNoteViewController.swift */,
-				D508CAD522CFE8E5004C6E96 /* PhotoNotesTableViewCell.swift */,
 			);
 			path = PhotoNotes;
 			sourceTree = "<group>";
@@ -109,6 +105,26 @@
 				D508CAC422CFA734004C6E96 /* Info.plist */,
 			);
 			path = PhotoNotesUITests;
+			sourceTree = "<group>";
+		};
+		D5E2091822D5632200627196 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D508CAB122CFA733004C6E96 /* PhotoNotes.xcdatamodeld */,
+				D508CACD22CFE734004C6E96 /* PhotoNote+CoreDataClass.swift */,
+				D508CACE22CFE734004C6E96 /* PhotoNote+CoreDataProperties.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D5E2091922D5634000627196 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D508CAD122CFE8B7004C6E96 /* PhotoNotesViewController.swift */,
+				D508CAD322CFE8CB004C6E96 /* PhotoNoteViewController.swift */,
+				D508CAD522CFE8E5004C6E96 /* PhotoNotesTableViewCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
